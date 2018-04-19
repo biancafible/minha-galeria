@@ -7,18 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GaleriaComponent implements OnInit {
 
-  fotos: string[] =[
+  fotos: string[] = [
     "Foto 1,",
     "Foto 2,",
     "Foto 3,",
     "Foto 4,",
     "Foto 5,",
-    "Foto 6,"
-  ]
+    "Foto 6,"];
+
+    mostrarFoto: boolean = true;
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  public sairGaleria() {
+    this.mostrarFoto = false;
+  }
+  public voltarGaleria() {
+    this.mostrarFoto = true;
+  }
 }

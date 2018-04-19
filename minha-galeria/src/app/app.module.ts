@@ -5,13 +5,15 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { GaleriaComponent } from './galeria/galeria.component';
 import { TopoComponent } from './topo/topo.component';
+import { RodapeComponent } from './rodape/rodape.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     GaleriaComponent,
-    TopoComponent
+    TopoComponent,
+    RodapeComponent
   ],
   imports: [
     BrowserModule
